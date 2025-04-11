@@ -1,0 +1,32 @@
+LOG_NAME: 'logs/'
+SEED: 24
+
+## Training
+is_test: False
+EPOCHS: 300
+k_folds: 10
+train_batch: 64
+lr: 0.01
+model: 'EEGNet' 
+feature_deep_dim: 56
+
+## Data
+data: 'BNCI2014004' 
+target_subject: 0
+num_classes: 2
+num_subjects: 9
+num_channels: 3
+sampling_rate: 250
+time_sample_num: 250
+n_fft: 64
+
+## Spcl
+k: 3
+spcl_lr: 0.05
+init_lambda: 0.125
+spcl_round: 19
+
+## Online
+online_update: False
+buffer_size: 8
+replay_ratio: 0.9
