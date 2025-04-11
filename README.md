@@ -1,1 +1,1 @@
-# BG-SPCL
+# bg-spcl
